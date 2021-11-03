@@ -12,11 +12,10 @@ irisDF[c(149,150),c(4,5)]
 #Number of observations for each species
 ncol(irisDF)
 #Rows with Sepal.Width>3.5
-nrow(irisDF[irisDF$Sepal.Width>3.5,])
 irisDF[irisDF$Sepal.Width>3.5,]
 #Making setosa.csv
 setosa <- irisDF[irisDF$Species=="setosa",]
-write.csv(setosa, file="setosa.csv", row.names = FALSE, col.names = TRUE) #It worked
+write.csv(setosa, file="setosa.csv", row.names = FALSE)
 #Mean, max, min of Petal.Length for virginica
 virginica <- irisDF[irisDF$Species=="virginica",]
 MeanPetalLength <- mean(virginica$Petal.Length) #Checked, correct
