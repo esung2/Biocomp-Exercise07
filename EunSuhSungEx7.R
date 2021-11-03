@@ -18,6 +18,6 @@ setosa <- irisDF[irisDF$Species=="setosa",]
 write.csv(setosa, file="setosa.csv", row.names = FALSE)
 #Mean, max, min of Petal.Length for virginica
 virginica <- irisDF[irisDF$Species=="virginica",]
-MeanPetalLength <- mean(virginica$Petal.Length) #Checked, correct
-MinPetalLength <- min(virginica$Petal.Length) #Checked, correct
-MaxPetaLength <- max(virginica$Petal.Length) #Checked, correct
+mean(virginica$Petal.Length)
+min(virginica$Petal.Length)
+max(virginica$Petal.Length)
