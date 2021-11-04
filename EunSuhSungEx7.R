@@ -1,13 +1,13 @@
 #Question 1
 #head on bash returns the first 10 lines of a file
-#Using file iris.csv
+#Using file: iris.csv
 file <- read.table(file="iris.csv", header = FALSE, sep =",") #Need to make header = FALSE because bash considers the header as a line
 FirstTenLines <- file[1:10,]
 FirstTenLines
 
 #Question 2
 irisDF <- read.csv(file="iris.csv", header = TRUE, stringsAsFactors = FALSE)
-#Print last 2 rows in the last 2 columns
+#Print the last 2 rows in the last 2 columns
 irisDF[c(149,150),c(4,5)]
 #Number of observations for each species
 ncol(irisDF)
